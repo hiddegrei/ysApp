@@ -1,0 +1,29 @@
+{% extends './base.html.twig' %}
+
+
+
+{% block body %}
+<div
+		class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 mt-[20%]">
+		<!-- Review Item -->
+		{% for post in posts %}
+			<div class="text-center pt-8 pb-4 border border-gray-200">
+				
+
+				
+
+				<h4 class="text-gray-500  text-xl py-2">
+					{{ post.post }}
+				</h4>
+
+
+				{# <p class=" text-gray-700 pt-4 pb-10 leading-8 font-light">
+					{{ post.userId }}
+				</p> #}
+
+				
+			</div>
+		{% endfor %}
+
+	</div>
+{% endblock %}
